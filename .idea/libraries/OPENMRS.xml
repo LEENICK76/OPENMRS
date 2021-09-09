@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="OPENMRS">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/OPENMRS.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
