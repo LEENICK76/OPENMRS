@@ -184,6 +184,8 @@ public class Login extends javax.swing.JDialog {
             Main dash = new Main();
             dash.setVisible(true);
             this.dispose();
+        }else{
+          new Login(null,true).show();
         }
     }//GEN-LAST:event_formWindowClosing
 
@@ -248,8 +250,15 @@ public class Login extends javax.swing.JDialog {
                     MainPanel main = new MainPanel();
                     main.setVisible(true);
                     this.dispose();
+                
+            }
+                else{
+               JOptionPane.showMessageDialog(null, "Login Failed..!!","Error",JOptionPane.ERROR_MESSAGE);
+                user.setText("");
+                pass.setText("");
+                }
                 con.close();
-            }}
+            }
 
         } catch (HeadlessException | SQLException e) {
             JOptionPane.showMessageDialog(null, e);
